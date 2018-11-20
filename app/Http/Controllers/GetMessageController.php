@@ -41,7 +41,7 @@ use LINE\LINEBot\MessageBuilder\TemplateBuilder\ImageCarouselColumnTemplateBuild
 // define('LINE_MESSAGE_CHANNEL_SECRET','f571a88a60d19bb28d06383cdd7af631');
 // define('LINE_MESSAGE_ACCESS_TOKEN','omL/jl2l8TFJaYFsOI2FaZipCYhBl6fnCf3da/PEvFG1e5ADvMJaILasgLY7jhcwrR2qOr2ClpTLmveDOrTBuHNPAIz2fzbNMGr7Wwrvkz08+ZQKyQ3lUfI5RK/NVozfMhLLAgcUPY7m4UtwVwqQKwdB04t89/1O/w1cDnyilFU=');
 define('LINE_MESSAGE_CHANNEL_SECRET','858e9bbe3d1b82a913b39c2a061e740a');
-define('2Dgvw7lWPlsn/4rvgGiPAgh+Do+WYP/TijwlDaaXCb0AN9FcoEk9snyvvH64TSpAO8vQspK8wn2dSA2l189D/PxOTxOz9UlgwnDwePri3wLoz/GPoRxWNEfUqJGPNXhY44pRpgX2Ly6S5DRzbnBPtQdB04t89/1O/w1cDnyilFU=');
+define('dBrBLXf4Vhn824aXjc8thSsmujxLJYJuu4L+6GvFIaIC6qz2fuvOEJHQB3IMn+HLO8vQspK8wn2dSA2l189D/PxOTxOz9UlgwnDwePri3wKG1llDipc9ASIQo0jSFeSClo2Ns+hxxLeugLK999R2SwdB04t89/1O/w1cDnyilFU=');
 
 class GetMessageController extends Controller
 {
