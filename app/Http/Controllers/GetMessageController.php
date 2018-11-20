@@ -76,10 +76,32 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "เกี่ยวกับ":
-                    $picFullSize = 'https://www.mywebsite.com/imgsrc/photos/f/simpleflower';
-                    $picThumbnail = 'https://www.mywebsite.com/imgsrc/photos/f/simpleflower/240';
-                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-                    break;
+                    // กำหนด action 4 ปุ่ม 4 ประเภท
+                    $actionBuilder = array(
+                        new MessageTemplateActionBuilder(
+                            'หลักการ',// ข้อความแสดงในปุ่ม
+                            'หลักการพลังประชารัฐ' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+                        ),
+                        new MessageTemplateActionBuilder(
+                            'ฟันเฟือง',// ข้อความแสดงในปุ่ม
+                            'ฟันเฟืองขับเคลื่อนประชารัฐ' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+                        ),
+                        new MessageTemplateActionBuilder(
+                            'ภารกิจสถาบัน',// ข้อความแสดงในปุ่ม
+                            'ภารกิจสถาบันปัญญาประชารัฐ' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+                        ),
+                    );
+                    $imageUrl = NULL;
+                    $replyData = new TemplateMessageBuilder('เกี่ยวกับพลังประชารัฐ',
+                        new ButtonTemplateBuilder(
+                                'ข้อมูลเกี่ยวกับพลังประชารัฐ', // กำหนดหัวเรื่อง
+                                NULL, // กำหนดรายละเอียด
+                                $imageUrl, // กำหนด url รุปภาพ
+                                $actionBuilder  // กำหนด action object
+                        )
+                    );              
+                    break;  
+                             
                 case "หลักสูตร":
                     $picFullSize = 'https://panya.herokuapp.com/img/course.png';
                     $picThumbnail = 'https://panya.herokuapp.com/img/course.png';
