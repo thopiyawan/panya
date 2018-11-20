@@ -124,15 +124,12 @@ if(!is_null($events)){
                     );              
                     break;
                 case "ข่าวสาร":
-                    $audioUrl = "https://www.mywebsite.com/simpleaudio.mp3";
-                    $replyData = new AudioMessageBuilder($audioUrl,27000);
+                    $textReplyMessage = "ข่าวสาร";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "คำถามที่พบบ่อย":
-                    $placeName = "ที่ตั้งร้าน";
-                    $placeAddress = "แขวง พลับพลา เขต วังทองหลาง กรุงเทพมหานคร ประเทศไทย";
-                    $latitude = 13.780401863217657;
-                    $longitude = 100.61141967773438;
-                    $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
+                    $textReplyMessage = "คำถามที่พบบ่อย";
+                    $replyData = new TextMessageBuilder($textReplyMessage);             
                     break;   
 //////////////////////////////
                 case "หลักการพลังประชารัฐ":
