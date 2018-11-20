@@ -40,8 +40,8 @@ use LINE\LINEBot\MessageBuilder\TemplateBuilder\ImageCarouselColumnTemplateBuild
 // define('LINE_MESSAGE_CHANNEL_ID','กรอก ค่า Channel ID');
 // define('LINE_MESSAGE_CHANNEL_SECRET','f571a88a60d19bb28d06383cdd7af631');
 // define('LINE_MESSAGE_ACCESS_TOKEN','omL/jl2l8TFJaYFsOI2FaZipCYhBl6fnCf3da/PEvFG1e5ADvMJaILasgLY7jhcwrR2qOr2ClpTLmveDOrTBuHNPAIz2fzbNMGr7Wwrvkz08+ZQKyQ3lUfI5RK/NVozfMhLLAgcUPY7m4UtwVwqQKwdB04t89/1O/w1cDnyilFU=');
-define('LINE_MESSAGE_CHANNEL_SECRET','71a8620806baf56b1d531ffc4b683f94');
-define('LINE_MESSAGE_ACCESS_TOKEN','TcE4zkXwclLW6bySf2Q4AJ2I3OenGK54pFSSJ7N/n/4U2abEkrInY+yHY6AW5Q6ntLA952UKN+WigumQWopa81HhPgeoreDOyw+MOjdcQi5We4lt8vvF7PNpwq3CfzKJozDy2XhscviEokRhteKj5wdB04t89/1O/w1cDnyilFU=');
+define('LINE_MESSAGE_CHANNEL_SECRET','858e9bbe3d1b82a913b39c2a061e740a');
+define('LINE_MESSAGE_ACCESS_TOKEN','xx9TqE3ZcdDHH5dhwV9hQvvAh2uTCJaULFCKwW4ISmfzKv52ZKMgZ40qSaR9ZlYNO8vQspK8wn2dSA2l189D/PxOTxOz9UlgwnDwePri3wJiu52Ilkx9Qgawh5MW90lsQaHxZbp2grVa4Tgzrj7y1AdB04t89/1O/w1cDnyilFU=');
 
 class GetMessageController extends Controller
 {
