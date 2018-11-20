@@ -81,9 +81,9 @@ if(!is_null($events)){
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
                 case "หลักสูตร":
-                    $picThumbnail = 'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/240';
-                    $videoUrl = "https://www.mywebsite.com/simplevideo.mp4";                
-                    $replyData = new VideoMessageBuilder($videoUrl,$picThumbnail);
+                    $picFullSize = 'https://panya.herokuapp.com/img/course.png';
+                    $picThumbnail = 'https://panya.herokuapp.com/img/course.png';
+                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
                 case "ข่าวสาร":
                     $audioUrl = "https://www.mywebsite.com/simpleaudio.mp3";
