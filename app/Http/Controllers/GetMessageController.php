@@ -95,7 +95,7 @@ if(!is_null($events)){
                     $replyData = new TemplateMessageBuilder('เกี่ยวกับพลังประชารัฐ',
                         new ButtonTemplateBuilder(
                                 'ข้อมูลเกี่ยวกับพลังประชารัฐ', // กำหนดหัวเรื่อง
-                                NULL, // กำหนดรายละเอียด
+                                'Please select', // กำหนดรายละเอียด
                                 $imageUrl, // กำหนด url รุปภาพ
                                 $actionBuilder  // กำหนด action object
                         )
