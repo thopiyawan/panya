@@ -72,7 +72,7 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "สมัครเข้าร่วมสถาบัน":
-                    $textReplyMessage = "";
+                    $textReplyMessage = "สอบถามข้อมูล";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "เกี่ยวกับ":
@@ -103,9 +103,25 @@ if(!is_null($events)){
                     break;  
                              
                 case "หลักสูตร":
-                    $picFullSize = 'https://panya.herokuapp.com/img/course.png';
-                    $picThumbnail = 'https://panya.herokuapp.com/img/course.png';
-                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                      $actionBuilder = array(
+                        new MessageTemplateActionBuilder(
+                            'ชื่อหลักสูตร',// ข้อความแสดงในปุ่ม
+                            'ชื่อหลักสูตร' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+                        ),
+                        new MessageTemplateActionBuilder(
+                            'กิจกรรมของหลักสูตร',// ข้อความแสดงในปุ่ม
+                            'กิจกรรมของหลักสูตร' // ข้อความที่จะแสดงฝั่งผู้ใช้ เมื่อคลิกเลือก
+                        ),
+                    );
+                    $imageUrl = NULL;
+                    $replyData = new TemplateMessageBuilder('เกี่ยวกับพลังประชารัฐ',
+                        new ButtonTemplateBuilder(
+                                'ข้อมูลเกี่ยวกับพลังประชารัฐ', // กำหนดหัวเรื่อง
+                                'Please select', // กำหนดรายละเอียด
+                                $imageUrl, // กำหนด url รุปภาพ
+                                $actionBuilder  // กำหนด action object
+                        )
+                    );              
                     break;
                 case "ข่าวสาร":
                     $audioUrl = "https://www.mywebsite.com/simpleaudio.mp3";
@@ -132,6 +148,17 @@ if(!is_null($events)){
                 case "ภารกิจสถาบันปัญญาประชารัฐ":
                     $picFullSize = 'https://panya.herokuapp.com/img/3.png';
                     $picThumbnail = 'https://panya.herokuapp.com/img/3.png';
+                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                    break;
+//////////////////////////////
+                case "ชื่อหลักสูตร":
+                    $picFullSize = 'https://panya.herokuapp.com/img/course.png';
+                    $picThumbnail = 'https://panya.herokuapp.com/img/course.png';
+                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                    break;
+                case "กิจกรรมของหลักสูตร":
+                    $picFullSize = 'https://panya.herokuapp.com/img/activity.png';
+                    $picThumbnail = 'https://panya.herokuapp.com/img/activity.png';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
 
