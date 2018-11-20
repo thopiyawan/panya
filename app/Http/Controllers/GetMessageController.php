@@ -117,14 +117,8 @@ if(!is_null($events)){
                     $latitude = 13.780401863217657;
                     $longitude = 100.61141967773438;
                     $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
-                    break;                                                                                                                     
-                default:
-                    $textReplyMessage = " คุณไม่ได้พิมพ์ ค่า ตามที่กำหนด";
-                    $replyData = new TextMessageBuilder($textReplyMessage);         
-                    break;                                      
-            }
-            break;
-////////////////////////////////////////////////
+                    break;   
+//////////////////////////////
                 case "หลักการพลังประชารัฐ":
                     $picFullSize = 'https://panya.herokuapp.com/img/1.png';
                     $picThumbnail = 'https://panya.herokuapp.com/img/1.png';
@@ -140,6 +134,14 @@ if(!is_null($events)){
                     $picThumbnail = 'https://panya.herokuapp.com/img/3.png';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                     break;
+
+                default:
+                    $textReplyMessage = " คุณไม่ได้พิมพ์ ค่า ตามที่กำหนด";
+                    $replyData = new TextMessageBuilder($textReplyMessage);         
+                    break;                                      
+            }
+            break;
+
         default:
             $textReplyMessage = json_encode($events);
             $replyData = new TextMessageBuilder($textReplyMessage);         
