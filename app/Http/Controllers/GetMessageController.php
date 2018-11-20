@@ -114,9 +114,9 @@ if(!is_null($events)){
                         ),
                     );
                     $imageUrl = NULL;
-                    $replyData = new TemplateMessageBuilder('เกี่ยวกับพลังประชารัฐ',
+                    $replyData = new TemplateMessageBuilder('เกี่ยวกับหลักสูตร',
                         new ButtonTemplateBuilder(
-                                'ข้อมูลเกี่ยวกับพลังประชารัฐ', // กำหนดหัวเรื่อง
+                                'เกี่ยวกับหลักสูตร', // กำหนดหัวเรื่อง
                                 'Please select', // กำหนดรายละเอียด
                                 $imageUrl, // กำหนด url รุปภาพ
                                 $actionBuilder  // กำหนด action object
