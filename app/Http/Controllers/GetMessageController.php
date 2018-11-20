@@ -60,23 +60,56 @@ class GetMessageController extends Controller
         $content = file_get_contents('php://input');
          
         // แปลงข้อความรูปแบบ JSON  ให้อยู่ในโครงสร้างตัวแปร array
-        $events = json_decode($content, true);
-        if(!is_null($events)){
-            // ถ้ามีค่า สร้างตัวแปรเก็บ replyToken ไว้ใช้งาน
-            $replyToken = $events['events'][0]['replyToken'];
-        }
-        // ส่วนของคำสั่งจัดเตียมรูปแบบข้อความสำหรับส่ง
-        $textMessageBuilder = new TextMessageBuilder(json_encode($events));
-         
-        //l ส่วนของคำสั่งตอบกลับข้อความ
-        $response = $bot->replyMessage($replyToken,$textMessageBuilder);
-        if ($response->isSucceeded()) {
-            echo 'Succeeded!';
-            return;
-        }
-         
-        // Failed
-        echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+       // แปลงข้อความรูปแบบ JSON  ให้อยู่ในโครงสร้างตัวแปร array
+$events = json_decode($content, true);
+if(!is_null($events)){
+    // ถ้ามีค่า สร้างตัวแปรเก็บ replyToken ไว้ใช้งาน
+    $replyToken = $events['events'][0]['replyToken'];
+    $typeMessage = $events['events'][0]['message']['type'];
+    $userMessage = $events['events'][0]['message']['text'];
+    $userMessage = strtolower($userMessage);
+    switch ($typeMessage){
+        case 'text':
+            switch ($userMessage) {
+                case "สมัครเข้าร่วมสถาบัน":
+                    $textReplyMessage = "";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    break;
+                case "เกี่ยวกับ":
+                    $picFullSize = 'https://www.mywebsite.com/imgsrc/photos/f/simpleflower';
+                    $picThumbnail = 'https://www.mywebsite.com/imgsrc/photos/f/simpleflower/240';
+                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                    break;
+                case "หลักสูตร":
+                    $picThumbnail = 'https://www.mywebsite.com/imgsrc/photos/f/sampleimage/240';
+                    $videoUrl = "https://www.mywebsite.com/simplevideo.mp4";                
+                    $replyData = new VideoMessageBuilder($videoUrl,$picThumbnail);
+                    break;
+                case "ข่าวสาร":
+                    $audioUrl = "https://www.mywebsite.com/simpleaudio.mp3";
+                    $replyData = new AudioMessageBuilder($audioUrl,27000);
+                    break;
+                case "คำถามที่พบบ่อย":
+                    $placeName = "ที่ตั้งร้าน";
+                    $placeAddress = "แขวง พลับพลา เขต วังทองหลาง กรุงเทพมหานคร ประเทศไทย";
+                    $latitude = 13.780401863217657;
+                    $longitude = 100.61141967773438;
+                    $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);              
+                    break;                                                                                                                     
+                default:
+                    $textReplyMessage = " คุณไม่ได้พิมพ์ ค่า ตามที่กำหนด";
+                    $replyData = new TextMessageBuilder($textReplyMessage);         
+                    break;                                      
+            }
+            break;
+        default:
+            $textReplyMessage = json_encode($events);
+            $replyData = new TextMessageBuilder($textReplyMessage);         
+            break;  
+    }
+}
+//l ส่วนของคำสั่งตอบกลับข้อความ
+$response = $bot->replyMessage($replyToken,$replyData);
     }
 
     /**
