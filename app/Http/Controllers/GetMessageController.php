@@ -124,6 +124,22 @@ if(!is_null($events)){
                     break;                                      
             }
             break;
+////////////////////////////////////////////////
+                case "หลักการพลังประชารัฐ":
+                    $picFullSize = 'https://panya.herokuapp.com/img/1.png';
+                    $picThumbnail = 'https://panya.herokuapp.com/img/1.png';
+                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                    break;
+                case "ฟันเฟืองขับเคลื่อนประชารัฐ":
+                    $picFullSize = 'https://panya.herokuapp.com/img/2.png';
+                    $picThumbnail = 'https://panya.herokuapp.com/img/2.png';
+                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                    break;
+                case "ภารกิจสถาบันปัญญาประชารัฐ":
+                    $picFullSize = 'https://panya.herokuapp.com/img/3.png';
+                    $picThumbnail = 'https://panya.herokuapp.com/img/3.png';
+                    $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                    break;
         default:
             $textReplyMessage = json_encode($events);
             $replyData = new TextMessageBuilder($textReplyMessage);         
