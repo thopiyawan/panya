@@ -120,7 +120,7 @@
                     <input type="text" placeholder="คณะ (Faculty)" required/>
                 <p>สาขา (Major)</p>
                     <input type="text" placeholder="สาขา (Major)" required/>
-                <p>โรงเรียน/มหาลัย (Education)</p>
+                <p>โรงเรียน/มหาวิทยาลัย (Education)</p>
                     <input type="text" placeholder="โรงเรียน/มหาวิทยาลัย (Education)" required/>
                   </div>          
                 </div>
