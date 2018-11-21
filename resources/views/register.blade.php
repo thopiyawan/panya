@@ -96,6 +96,7 @@
               border-radius: 1em;
               background-color: #cde4f5;
               transition: 0.3s all ease-in-out;
+              padding: 10px 0;
             }
             .dropdown-el input {
               display: none;
