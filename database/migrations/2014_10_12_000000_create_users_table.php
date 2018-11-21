@@ -32,7 +32,7 @@ class CreateUsersTable extends Migration
             $table->string('edu_level');
             // $table->timestamp('email_verified_at')->nullable();
             // $table->string('password');
-            $table->rememberToken();
+            // $table->rememberToken();
             $table->timestamps();
         });
     }
