@@ -107,7 +107,7 @@
                 <p>อาชีพ (Career)</p>
                 <input type="text" required/>
                 <p>ระดับการศึกษา (Education)</p>
-                      <select name="edu" id="edu" style="border-radius:500px;">
+                      <select name="edu" id="edu" style="padding-top:500px;">
                         <option value=""  >- กรุณาเลือกระดับการศึกษา -</option>
                         <option value="1" >ต่ำกว่ามัธยมศึกษา</option>
                         <option value="2" >ปวช./มัธยมศึกษา</option>
