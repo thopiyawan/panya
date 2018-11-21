@@ -203,6 +203,15 @@
                         <input type="text" placeholder="สาขา (Major)" required/>
                         <input type="text" placeholder="โรงเรียน/มหาลัย" required/>
                     </span>
+                      <select name="edu" id="edu">
+                        <option value=""  >- กรุณาเลือกระดับการศึกษา -</option>
+                        <option value="1" >ต่ำกว่ามัธยมศึกษา</option>
+                        <option value="2" >ปวช./มัธยมศึกษา</option>
+                        <option value="3" >ปวส.</option>
+                        <option value="4" >ปริญญาตรี</option>
+                        <option value="5" >ปริญญาโท</option>
+                        <option value="6" >ปริญญาเอก</option>
+                    </select>
                    
             
                 </div>
