@@ -101,7 +101,7 @@
                 <input type="text" required/>
                 <p>การศึกษา (Education)</p>
                   <div class="grid">
-                    <input type="text" placeholder="ระดับการศึกษา (Faculty)" required/>
+                    <input type="text" placeholder="ระดับการศึกษา (Education)" required/>
                     <input type="text" placeholder="คณะ (Faculty)" required/>
                     <input type="text" placeholder="สาขา (Major)" required/>
                 </div>          
