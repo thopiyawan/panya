@@ -105,6 +105,7 @@
                     <input type="text" placeholder="ระดับการศึกษา (Education)" required/>
                     <input type="text" placeholder="คณะ (Faculty)" required/>
                     <input type="text" placeholder="สาขา (Major)" required/>
+                    <input type="text" placeholder="โรงเรียน/มหาลัย" required/>
                   </div>          
                 </div>
                 <div class="btn-con">
