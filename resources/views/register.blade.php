@@ -77,7 +77,7 @@
                     grid-template-columns: auto;
                 }
             }*/
-         /*   .dropdown-el {
+            .dropdown-el {
               min-width: 12em;
               position: relative;
               display: inline-block;
@@ -153,7 +153,7 @@
             .dropdown-el.expanded::after {
               transform: rotate(-180deg);
               top: .55em;
-            }*/
+            }
 
         </style>
     </head>
