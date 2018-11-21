@@ -127,6 +127,7 @@
               position: relative;
             }
             .dropdown-el::after {
+              margin-top:6px;
               content: "";
               position: absolute;
               right: 0.8em;
