@@ -22,6 +22,6 @@ Route::get('bot', function (Request $request) {
 });
 Route::post('bot', ['as' => 'line.bot.message', 'uses' => 'GetMessageController@getmessage']);
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/register', function () {
+    return view('register');
 });
