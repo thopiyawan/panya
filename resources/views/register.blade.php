@@ -79,10 +79,11 @@
         <form>
                 <h1>สมัครเข้าร่วมสถาบันปัญญาประชารัฐ</h1>
                 <div  class="center">
-                <p>ชื่อ (First Name)</p>
-                <input type="text" required/>
-                <p>นามสกุล (Last Name)</p>
-                <input type="text" required/>
+                <p>ชื่อ (Name)</p>
+                 <div class="grid">
+                    <input type="text" placeholder="ชื่อ (First name)" required/>
+                    <input type="text" placeholder="นามสกุล (Last name)" required/>
+                  </div>   
                 <p>อายุ (Age)</p>
                 <input type="text" required/>
                 <p>เบอร์โทรศัพท์ (Telephone number)</p>
@@ -90,13 +91,13 @@
                 <p>อีเมล (Email)</p>
                 <input type="text" required/>
                 <p>ที่อยู่ (Address)</p>
-                <div class="grid">
+                  <div class="grid">
                     <input type="text" placeholder="บ้านเลขที่/หมู่/ซอย/ถนน (Number)" required/>
                     <input type="text" placeholder="ตำบล (Sub-district)" required/>
                     <input type="text" placeholder="อำเภอ (District)" required/>
                     <input type="text" placeholder="จังหวัด (Province)" required/>
                     <input type="text" placeholder="รหัสไปรษณีย์ (Postal Code)" required/>
-                </div>
+                  </div>
                 <p>อาชีพ (Career)</p>
                 <input type="text" required/>
                 <p>การศึกษา (Education)</p>
@@ -104,7 +105,7 @@
                     <input type="text" placeholder="ระดับการศึกษา (Education)" required/>
                     <input type="text" placeholder="คณะ (Faculty)" required/>
                     <input type="text" placeholder="สาขา (Major)" required/>
-                </div>          
+                  </div>          
                 </div>
                 <div class="btn-con">
                     <button class="submit">Submit</button>
