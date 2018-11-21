@@ -99,8 +99,7 @@
                   </div>
                 <p>อาชีพ (Career)</p>
                 <input type="text" required/>
-                <p>การศึกษา (Education)</p>
-                  <div class="grid">
+                <p>ระดับการศึกษา (Education)</p>
                       <select name="edu" id="edu">
                         <option value=""  >- กรุณาเลือกระดับการศึกษา -</option>
                         <option value="1" >ต่ำกว่ามัธยมศึกษา</option>
@@ -110,8 +109,11 @@
                         <option value="5" >ปริญญาโท</option>
                         <option value="6" >ปริญญาเอก</option>
                     </select>
+                <p>คณะ (Faculty)</p>
                     <input type="text" placeholder="คณะ (Faculty)" required/>
+                <p>สาขา (Major)</p>
                     <input type="text" placeholder="สาขา (Major)" required/>
+                <p>โรงเรียน/มหาลัย (Education)</p>
                     <input type="text" placeholder="โรงเรียน/มหาลัย (Education)" required/>
                   </div>          
                 </div>
