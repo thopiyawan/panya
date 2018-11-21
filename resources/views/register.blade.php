@@ -126,77 +126,7 @@
         </script>>
         <!-- Styles -->
         <style>
-            body{
-                margin: 0;
-                background: #39518c;
-                font-family: 'Kanit', sans-serif;
-            }
-            .center{
-                width: 90%;
-                margin: auto;
-            }
-            /*.name-con{
-                display: grid;
-                grid-template-columns: auto auto;
-            }*/
-            form{
-                width: 80%;
-                /*height: 70%;*/
-                background-color: white;
-                border-radius: 10px;
-                padding: 20px;
-                margin: 20px auto;
-                max-width: 600px;
-            }
-            form > h1 {
-                text-align: center;
-            } 
-            /*.register{
-                width: 100%;
-            }*/
-            form input{
-                border: 1px solid #39518c;
-                border-radius: 100px;
-                padding: 10px;
-                width: 90%;
-                outline: none;
-                font-family: 'Kanit', sans-serif;
-            }
-            .submit{
-                background-color: #39518c;
-                color: white;
-                border-radius: 100px;
-                padding: 10px 20px;
-                margin-top: 15px;
-                border: 0;
-                font-family: 'Kanit', sans-serif;
-            }
-            .grid{
-                display: grid;
-                grid-template-columns: auto auto;
-                grid-gap: 10px;
-            }
-            .btn-con{
-                text-align: center;
-            }
-            .grid > input{
-                width: 85%;
-            }
-            #edu{
-                border: 1px solid #39518c;
-                border-radius: 100px;
-                padding: 10px;
-                width: 90%;
-                outline: none;
-                font-family: 'Kanit', sans-serif;
-            }
-            /*@media screen and (max-width: 700px) {
-                .name-con{
-                    grid-template-columns: auto;
-                }
-            }*/
-            /* ///  DECORATION CSS ///  */
-            .cont_select_center {
+           .cont_select_center {
               position: absolute;
               left: 50%;
               top:50%;
@@ -314,6 +244,70 @@
                 margin: 0px;
                 cursor: pointer;
             }
+            body{
+                margin: 0;
+                background: #39518c;
+                font-family: 'Kanit', sans-serif;
+            }
+            .center{
+                width: 90%;
+                margin: auto;
+            }
+            /*.name-con{
+                display: grid;
+                grid-template-columns: auto auto;
+            }*/
+            form{
+                width: 80%;
+                /*height: 70%;*/
+                background-color: white;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px auto;
+                max-width: 600px;
+            }
+            form > h1 {
+                text-align: center;
+            } 
+            /*.register{
+                width: 100%;
+            }*/
+            form input{
+                border: 1px solid #39518c;
+                border-radius: 100px;
+                padding: 10px;
+                width: 90%;
+                outline: none;
+                font-family: 'Kanit', sans-serif;
+            }
+            .submit{
+                background-color: #39518c;
+                color: white;
+                border-radius: 100px;
+                padding: 10px 20px;
+                margin-top: 15px;
+                border: 0;
+                font-family: 'Kanit', sans-serif;
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 10px;
+            }
+            .btn-con{
+                text-align: center;
+            }
+            .grid > input{
+                width: 85%;
+            }
+       
+            /*@media screen and (max-width: 700px) {
+                .name-con{
+                    grid-template-columns: auto;
+                }
+            }*/
+            /* ///  DECORATION CSS ///  */
+         
         </style>
     </head>
     <body>
