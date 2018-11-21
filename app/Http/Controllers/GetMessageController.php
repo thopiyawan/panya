@@ -72,7 +72,7 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "สมัครเข้าร่วมสถาบัน":
-                    $textReplyMessage = "สอบถามข้อมูล";
+                    $textReplyMessage = "";
                     $replyData = new TextMessageBuilder($textReplyMessage);
                     break;
                 case "เกี่ยวกับ":
