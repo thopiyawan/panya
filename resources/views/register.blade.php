@@ -156,7 +156,7 @@
               top: .55em;
             }
             .padding-bottom10>input{
-                padding-bottom: 10px;
+                margin-bottom: 10px;
             }
 
         </style>
