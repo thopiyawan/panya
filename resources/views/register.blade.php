@@ -155,6 +155,9 @@
               transform: rotate(-180deg);
               top: .55em;
             }
+            .padding-bottom10>input{
+                padding-bottom: 10px;
+            }
 
         </style>
     </head>
@@ -184,7 +187,7 @@
                 <p>อาชีพ (Career)</p>
                 <input type="text" required/>
                 <p>การศึกษา (Education)</p>
-           
+                 
                     <span class="dropdown-el">
                         <input type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance"><label for="sort-relevance">Relevance</label>
                         <input type="radio" name="sortType" value="Popularity" id="sort-best"><label for="sort-best">Product Popularity</label>
@@ -193,9 +196,12 @@
                         <input type="radio" name="sortType" value="ProductBrand" id="sort-brand"><label for="sort-brand">Product Brand</label>
                         <input type="radio" name="sortType" value="ProductName" id="sort-name"><label for="sort-name">Product Name</label>
                     </span>
-                    <input type="text" placeholder="คณะ (Faculty)" required/>
-                    <input type="text" placeholder="สาขา (Major)" required/>
-                    <input type="text" placeholder="โรงเรียน/มหาลัย" required/>
+                    <span class = "padding-bottom10">
+                        <input type="text" placeholder="คณะ (Faculty)" required/>
+                        <input type="text" placeholder="สาขา (Major)" required/>
+                        <input type="text" placeholder="โรงเรียน/มหาลัย" required/>
+                    </span>>
+                   
             
                 </div>
                 <div class="btn-con">
