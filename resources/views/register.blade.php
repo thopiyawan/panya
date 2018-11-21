@@ -68,6 +68,14 @@
             .grid > input{
                 width: 85%;
             }
+            #edu{
+                border: 1px solid #39518c;
+                border-radius: 100px;
+                padding: 10px;
+                width: 90%;
+                outline: none;
+                font-family: 'Kanit', sans-serif;
+            }
             /*@media screen and (max-width: 700px) {
                 .name-con{
                     grid-template-columns: auto;
@@ -102,7 +110,15 @@
                 <input type="text" required/>
                 <p>การศึกษา (Education)</p>
                   <div class="grid">
-                    <input type="text" placeholder="ระดับการศึกษา (Education)" required/>
+                    <select name="edu" id="edu">
+                        <option value=""  >- กรุณาเลือกระดับการศึกษา -</option>
+                        <option value="1" >ต่ำกว่ามัธยมศึกษา</option>
+                        <option value="2" >ปวช./มัธยมศึกษา</option>
+                        <option value="3" >ปวส.</option>
+                        <option value="4" >ปริญญาตรี</option>
+                        <option value="5" >ปริญญาโท</option>
+                        <option value="6" >ปริญญาเอก</option>
+                    </select>
                     <input type="text" placeholder="คณะ (Faculty)" required/>
                     <input type="text" placeholder="สาขา (Major)" required/>
                     <input type="text" placeholder="โรงเรียน/มหาลัย" required/>
