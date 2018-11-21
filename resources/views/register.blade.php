@@ -110,18 +110,8 @@
                 <input type="text" required/>
                 <p>การศึกษา (Education)</p>
                   <div class="grid">
-                  <!--   <select name="edu" id="edu">
-                        <option value=""  >- กรุณาเลือกระดับการศึกษา -</option>
-                        <option value="1" >ต่ำกว่ามัธยมศึกษา</option>
-                        <option value="2" >ปวช./มัธยมศึกษา</option>
-                        <option value="3" >ปวส.</option>
-                        <option value="4" >ปริญญาตรี</option>
-                        <option value="5" >ปริญญาโท</option>
-                        <option value="6" >ปริญญาเอก</option>
-                    </select> -->
-                    <div class="cont_heg_50"></div>
-
-                        <div class="cont_select_center">
+                
+                    
 
                           <!-- Custom select structure --> 
                         <div class="select_mate" data-mate-select="active" >
@@ -139,10 +129,9 @@
                           <ul class="cont_select_int">  </ul> 
                         </div>
                           </div>
-                          <!-- Custom select structure --> 
+                
 
 
-                        </div> <!-- End div center   -->
     
                     <input type="text" placeholder="คณะ (Faculty)" required/>
                     <input type="text" placeholder="สาขา (Major)" required/>
