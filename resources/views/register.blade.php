@@ -200,7 +200,7 @@
                         <input type="text" placeholder="คณะ (Faculty)" required/>
                         <input type="text" placeholder="สาขา (Major)" required/>
                         <input type="text" placeholder="โรงเรียน/มหาลัย" required/>
-                    </span>>
+                    </span>
                    
             
                 </div>
