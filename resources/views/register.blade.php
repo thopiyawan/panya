@@ -338,7 +338,7 @@
                 <p>การศึกษา (Education)</p>
                   <div class="grid">
                     <div class="select_mate" data-mate-select="active" >
-                        <select name="" onchange="" onclick="return false;" id=""style="border-radius:500px;" >
+                        <select name="" onchange="" onclick="return false;" id="">
                         <option value=""  >Seleciona una Opcion </option>
                         <option value="1">Select option 1</option>
                         <option value="2" >Select option 2</option>
