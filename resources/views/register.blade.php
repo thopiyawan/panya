@@ -78,6 +78,7 @@
                 }
             }*/
             .dropdown-el {
+              margin-bottom: 10px; 
               min-width: 12em;
               position: relative;
               display: inline-block;
