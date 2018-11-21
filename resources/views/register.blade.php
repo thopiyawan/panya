@@ -9,9 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-       
+
         <!-- Styles -->
         <style>
             body{
@@ -46,7 +44,7 @@
                 border: 1px solid #39518c;
                 border-radius: 100px;
                 padding: 10px;
-                width: 100%;
+                width: 90%;
                 outline: none;
                 font-family: 'Kanit', sans-serif;
             }
@@ -68,97 +66,13 @@
                 text-align: center;
             }
             .grid > input{
-                width: 100%;
+                width: 85%;
             }
             /*@media screen and (max-width: 700px) {
                 .name-con{
                     grid-template-columns: auto;
                 }
             }*/
-            .dropdown-el {
-              padding-top: 5px;
-              margin-bottom: 10px; 
-              min-width: 12em;
-              position: relative;
-              display: inline-block;
-              margin-right: 1em;
-              min-height: 3em;
-              max-height: 3em;
-              overflow: hidden;
-              top: .5em;
-              cursor: pointer;
-              text-align: left;
-              white-space: nowrap;
-              color: #444;
-              outline: none;
-              border: .06em solid #39518c;
-              border-radius: 2em;
-              transition: 0.3s all ease-in-out;
-              padding: 10px 0;
-            }
-            .dropdown-el input {
-              display: none;
-            }
-            .dropdown-el label {
-              border-top: .06em solid #d9d9d9;
-              display: block;
-              height: 2em;
-              line-height: 2em;
-              padding-left: 1em;
-              padding-right: 3em;
-              cursor: pointer;
-              position: relative;
-              transition: 0.3s color ease-in-out;
-            }
-            .dropdown-el label:nth-child(2) {
-              margin-top: 2em;
-              border-top: .06em solid #d9d9d9;
-            }
-            .dropdown-el input:checked + label {
-              display: block;
-              border-top: none;
-              position: absolute;
-              top: 0;
-            }
-            .dropdown-el input:checked + label:nth-child(2) {
-              margin-top: 0;
-              position: relative;
-            }
-            .dropdown-el::after {
-              margin-top:6px;
-              content: "";
-              position: absolute;
-              right: 0.8em;
-              top: 0.9em;
-              border: 0.3em solid #3694d7;
-              border-color: #3694d7 transparent transparent transparent;
-              transition: .4s all ease-in-out;
-            }
-            .dropdown-el.expanded {
-              border: 0.06em solid #3694d7;
-              background: #fff;
-              border-radius: .25em;
-              padding: 0;
-              box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px 0px;
-              max-height: 15em;
-            }
-            .dropdown-el.expanded label {
-              border-top: .06em solid #d9d9d9;
-            }
-            .dropdown-el.expanded label:hover {
-              color: #3694d7;
-            }
-            .dropdown-el.expanded input:checked + label {
-              color: #3694d7;
-            }
-            .dropdown-el.expanded::after {
-              transform: rotate(-180deg);
-              top: .55em;
-            }
-            .padding-bottom10>input{
-                margin-bottom: 10px;
-            }
-
         </style>
     </head>
     <body>
@@ -187,46 +101,16 @@
                 <p>อาชีพ (Career)</p>
                 <input type="text" required/>
                 <p>การศึกษา (Education)</p>
-                 
-                    <span class="dropdown-el">
-                        <input type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance"><label for="sort-relevance">Relevance</label>
-                        <input type="radio" name="sortType" value="Popularity" id="sort-best"><label for="sort-best">Product Popularity</label>
-                        <input type="radio" name="sortType" value="PriceIncreasing" id="sort-low"><label for="sort-low">Price Low to High</label>
-                        <input type="radio" name="sortType" value="PriceDecreasing" id="sort-high"><label for="sort-high">Price High to Low</label>
-                        <input type="radio" name="sortType" value="ProductBrand" id="sort-brand"><label for="sort-brand">Product Brand</label>
-                        <input type="radio" name="sortType" value="ProductName" id="sort-name"><label for="sort-name">Product Name</label>
-                    </span>
-                    <span class = "padding-bottom10">
-                        <input type="text" placeholder="คณะ (Faculty)" required/>
-                        <input type="text" placeholder="สาขา (Major)" required/>
-                        <input type="text" placeholder="โรงเรียน/มหาลัย" required/>
-                    </span>
-                      <select name="edu" id="edu">
-                        <option value=""  >- กรุณาเลือกระดับการศึกษา -</option>
-                        <option value="1" >ต่ำกว่ามัธยมศึกษา</option>
-                        <option value="2" >ปวช./มัธยมศึกษา</option>
-                        <option value="3" >ปวส.</option>
-                        <option value="4" >ปริญญาตรี</option>
-                        <option value="5" >ปริญญาโท</option>
-                        <option value="6" >ปริญญาเอก</option>
-                    </select>
-                   
-            
+                  <div class="grid">
+                    <input type="text" placeholder="ระดับการศึกษา (Education)" required/>
+                    <input type="text" placeholder="คณะ (Faculty)" required/>
+                    <input type="text" placeholder="สาขา (Major)" required/>
+                    <input type="text" placeholder="โรงเรียน/มหาลัย (Education)" required/>
+                  </div>          
                 </div>
                 <div class="btn-con">
                     <button class="submit">Submit</button>
                 </div>
         </form>
     </body>
-     <script type="text/javascript">
-            $('.dropdown-el').click(function(e) {
-              e.preventDefault();
-              e.stopPropagation();
-              $(this).toggleClass('expanded');
-              $('#'+$(e.target).attr('for')).prop('checked',true);
-            });
-            $(document).click(function() {
-              $('.dropdown-el').removeClass('expanded');
-            });
-        </script>
 </html>
