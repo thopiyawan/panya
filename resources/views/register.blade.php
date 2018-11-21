@@ -9,17 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
-        <script type="text/javascript">
-            $('.dropdown-el').click(function(e) {
-              e.preventDefault();
-              e.stopPropagation();
-              $(this).toggleClass('expanded');
-              $('#'+$(e.target).attr('for')).prop('checked',true);
-            });
-            $(document).click(function() {
-              $('.dropdown-el').removeClass('expanded');
-            });
-        </script>>
+       
         <!-- Styles -->
         <style>
             body{
@@ -216,4 +206,15 @@
                 </div>
         </form>
     </body>
+     <script type="text/javascript">
+            $('.dropdown-el').click(function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              $(this).toggleClass('expanded');
+              $('#'+$(e.target).attr('for')).prop('checked',true);
+            });
+            $(document).click(function() {
+              $('.dropdown-el').removeClass('expanded');
+            });
+        </script>
 </html>
