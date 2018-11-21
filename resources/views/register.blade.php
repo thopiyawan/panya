@@ -72,7 +72,7 @@
                 border: 1px solid #39518c;
                 padding: 20px;
                 width: 100%;
-                outline: none;
+             /*   outline: none;*/
                 font-family: 'Kanit', sans-serif;
             }
             /*@media screen and (max-width: 700px) {
