@@ -69,7 +69,7 @@
             .btn-con{
                 text-align: center;
             }
-            /*.grid > input{
+            .grid > input{
                 width: 85%;
             }
             #edu{
@@ -79,7 +79,7 @@
                 width: 90%;
                 outline: none;
                 font-family: 'Kanit', sans-serif;
-            }*/
+            }
             /*@media screen and (max-width: 700px) {
                 .name-con{
                     grid-template-columns: auto;
@@ -191,7 +191,7 @@
                 <p>อาชีพ (Career)</p>
                 <input type="text" required/>
                 <p>การศึกษา (Education)</p>
-                  <div class="grid">
+           
                     <span class="dropdown-el">
                         <input type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance"><label for="sort-relevance">Relevance</label>
                         <input type="radio" name="sortType" value="Popularity" id="sort-best"><label for="sort-best">Product Popularity</label>
@@ -203,7 +203,7 @@
                     <input type="text" placeholder="คณะ (Faculty)" required/>
                     <input type="text" placeholder="สาขา (Major)" required/>
                     <input type="text" placeholder="โรงเรียน/มหาลัย" required/>
-                  </div>          
+            
                 </div>
                 <div class="btn-con">
                     <button class="submit">Submit</button>
