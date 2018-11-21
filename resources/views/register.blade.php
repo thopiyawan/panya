@@ -78,13 +78,14 @@
                 }
             }*/
             .dropdown-el {
+                padding-top: 7px;
               margin-bottom: 10px; 
               min-width: 12em;
               position: relative;
               display: inline-block;
               margin-right: 1em;
-              min-height: 2em;
-              max-height: 2em;
+              min-height: 3em;
+              max-height: 3em;
               overflow: hidden;
               top: .5em;
               cursor: pointer;
@@ -92,8 +93,8 @@
               white-space: nowrap;
               color: #444;
               outline: none;
-              border: .06em solid transparent;
-              border-radius: 1em;
+              border: .06em solid #39518c;
+              border-radius: 2em;
               background-color: #cde4f5;
               transition: 0.3s all ease-in-out;
               padding: 10px 0;
