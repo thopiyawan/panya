@@ -68,6 +68,14 @@
             .grid > input{
                 width: 85%;
             }
+            #edu{
+                border: 1px solid #39518c;
+                /*border-radius: 100px;*/
+                padding: 10px;
+                width: 90%;
+                outline: none;
+                font-family: 'Kanit', sans-serif;
+            }
             /*@media screen and (max-width: 700px) {
                 .name-con{
                     grid-template-columns: auto;
