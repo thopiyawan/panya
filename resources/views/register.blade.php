@@ -74,8 +74,6 @@
                 width: 100%;
              /*   outline: none;*/
                 font-family: 'Kanit', sans-serif;
-                min-height: 3em;
-                max-height:3em;
             }
             /*@media screen and (max-width: 700px) {
                 .name-con{
