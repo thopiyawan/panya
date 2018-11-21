@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <!-- Styles -->
         <style>
             body{
@@ -107,7 +108,7 @@
                 <p>อาชีพ (Career)</p>
                 <input type="text" required/>
                 <p>ระดับการศึกษา (Education)</p>
-                      <select name="edu" id="edu" style="padding-top:500px;">
+                      <select name="edu" id="edu">
                         <option value=""  >- กรุณาเลือกระดับการศึกษา -</option>
                         <option value="1" >ต่ำกว่ามัธยมศึกษา</option>
                         <option value="2" >ปวช./มัธยมศึกษา</option>
