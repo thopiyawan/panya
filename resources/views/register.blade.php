@@ -69,7 +69,7 @@
             .btn-con{
                 text-align: center;
             }
-            .grid > input{
+            /*.grid > input{
                 width: 85%;
             }
             #edu{
@@ -79,7 +79,7 @@
                 width: 90%;
                 outline: none;
                 font-family: 'Kanit', sans-serif;
-            }
+            }*/
             /*@media screen and (max-width: 700px) {
                 .name-con{
                     grid-template-columns: auto;
