@@ -70,7 +70,6 @@
             }
             #edu{
                 border: 1px solid #39518c;
-                border-radius: 100px;
                 padding: 10px;
                 width: 90%;
                 outline: none;
