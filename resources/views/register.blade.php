@@ -82,115 +82,115 @@
                 }
             }*/
              /* ///  DECORATION CSS ///  */
-.cont_select_center {
-  position: absolute;
-  left: 50%;
-  top:50%;
-  margin-top: -30px;
-  margin-left: -150px;
-}
+            .cont_select_center {
+              position: absolute;
+              left: 50%;
+              top:50%;
+              margin-top: -30px;
+              margin-left: -150px;
+            }
 
-.cont_heg_50 {
-  position: absolute;
-  height: 50%;
-  left: 0;
-  top: 0;
-  width: 100%;
-background-color: #fd7b52;
-}
-/* ///  END DECORATION CSS  ///  */
+            .cont_heg_50 {
+              position: absolute;
+              height: 50%;
+              left: 0;
+              top: 0;
+              width: 100%;
+            background-color: #fd7b52;
+            }
+            /* ///  END DECORATION CSS  ///  */
 
-.icon_select_mate {
-  position: absolute;
-  top:20px;
-  right: 2%;
-  font-size: 16px;
-    height: 22px;
-  transition: all 275ms;
-}
+            .icon_select_mate {
+              position: absolute;
+              top:20px;
+              right: 2%;
+              font-size: 16px;
+                height: 22px;
+              transition: all 275ms;
+            }
 
-.select_mate {
-  position: relative;
-  float: left;
-  min-width: 300px;
-  width: 300px;
-  min-height: 60px;
-  font-family: 'Roboto';
-  color: #777;
-  font-weight: 300;
-  background-color: #fff;
-  box-shadow: 1px 2px 10px -2px rgba(0,0,0,0.3);
-  border-radius: 3px;
-  transition: all 375ms ease-in-out;
-/* Oculto el elemento select */
-  select {
-  position: absolute;
-  overflow: hidden;
-  height: 0px;
-  opacity: 0;  
-    z-index: -1;
-  }
-}
+            .select_mate {
+              position: relative;
+              float: left;
+              min-width: 300px;
+              width: 300px;
+              min-height: 60px;
+              font-family: 'Roboto';
+              color: #777;
+              font-weight: 300;
+              background-color: #fff;
+              box-shadow: 1px 2px 10px -2px rgba(0,0,0,0.3);
+              border-radius: 3px;
+              transition: all 375ms ease-in-out;
+            /* Oculto el elemento select */
+              select {
+              position: absolute;
+              overflow: hidden;
+              height: 0px;
+              opacity: 0;  
+                z-index: -1;
+              }
+            }
 
-.cont_list_select_mate {
-  position: relative;
-  float: left;
-  width: 100%;
-}
+            .cont_list_select_mate {
+              position: relative;
+              float: left;
+              width: 100%;
+            }
 
-.cont_select_int {
- position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 999;
-  overflow: hidden;
-  height: 0px;
-  width: 100%;
-  background-color: #fff;
-  padding: 0px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  border-radius: 0px 0px 3px 3px;
-  box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.2);
-  transition: all 375ms ease-in-out;
+            .cont_select_int {
+             position: absolute;
+              left: 0px;
+              top: 0px;
+              z-index: 999;
+              overflow: hidden;
+              height: 0px;
+              width: 100%;
+              background-color: #fff;
+              padding: 0px;
+              margin-bottom: 0px;
+              margin-top: 0px;
+              border-radius: 0px 0px 3px 3px;
+              box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.2);
+              transition: all 375ms ease-in-out;
 
-    li {
-    position: relative;
-    float: left;
-    width: 96%;
-    border-bottom:1px solid #E0E0E0;
-    background-color: #F5F5F5;
-    list-style-type: none;
-    padding: 10px 2%;
-    margin: 0px;  
-    transition: all 275ms ease-in-out;
-    display: block;
-    cursor:pointer;
-        
-        &:last-child {
-        border-radius: 3px;
-        border-bottom:0px; 
+                li {
+                position: relative;
+                float: left;
+                width: 96%;
+                border-bottom:1px solid #E0E0E0;
+                background-color: #F5F5F5;
+                list-style-type: none;
+                padding: 10px 2%;
+                margin: 0px;  
+                transition: all 275ms ease-in-out;
+                display: block;
+                cursor:pointer;
+                    
+                    &:last-child {
+                    border-radius: 3px;
+                    border-bottom:0px; 
 
-        }
-         &:hover {
-        background-color: #EEEEEE;
-         } 
-     }
+                    }
+                     &:hover {
+                    background-color: #EEEEEE;
+                     } 
+                 }
 
-   .active {
-   background-color: #EEEEEE;
-   }
+               .active {
+               background-color: #EEEEEE;
+               }
 
-}
+            }
 
-/* etiqueta <p> con la opcion selecionada  */
-.selecionado_opcion {
-    padding: 20px 2%;
-    width: 96%;
-    display: block;
-    margin: 0px;
-    cursor: pointer;
-}
+            /* etiqueta <p> con la opcion selecionada  */
+            .selecionado_opcion {
+                padding: 20px 2%;
+                width: 96%;
+                display: block;
+                margin: 0px;
+                cursor: pointer;
+            }
 
         </style>
     </head>
@@ -223,24 +223,31 @@ background-color: #fd7b52;
                   <div class="grid">
                 
                     
+                    <div class="cont_heg_50"></div>
 
-                          <!-- Custom select structure --> 
-                        <div class="select_mate" data-mate-select="active" >
-                        <select name="" onchange="" onclick="return false;" id="">
-                        <option value=""  >Seleciona una Opcion </option>
-                        <option value="1">Select option 1</option>
-                        <option value="2" >Select option 2</option>
-                        <option value="3">Select option 3</option>
-                          </select>
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                            <path d="M0-.75h24v24H0z" fill="none"/>
-                        </svg></span>
-                        <div class="cont_list_select_mate">
-                          <ul class="cont_select_int">  </ul> 
-                        </div>
-                          </div>
-                
+                    <div class="cont_select_center">
+
+                      <!-- Custom select structure --> 
+                    <div class="select_mate" data-mate-select="active" >
+                    <select name="" onchange="" onclick="return false;" id="">
+                    <option value=""  >Seleciona una Opcion </option>
+                    <option value="1">Select option 1</option>
+                    <option value="2" >Select option 2</option>
+                    <option value="3">Select option 3</option>
+                      </select>
+                    <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                        <path d="M0-.75h24v24H0z" fill="none"/>
+                    </svg></span>
+                    <div class="cont_list_select_mate">
+                      <ul class="cont_select_int">  </ul> 
+                    </div>
+                      </div>
+                      <!-- Custom select structure --> 
+
+
+                    </div> <!-- End div center   -->
+                        
 
 
     
