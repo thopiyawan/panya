@@ -121,7 +121,7 @@
                 <p>สาขา (Major)</p>
                     <input type="text" placeholder="สาขา (Major)" required/>
                 <p>โรงเรียน/มหาลัย (Education)</p>
-                    <input type="text" placeholder="โรงเรียน/มหาลัย (Education)" required/>
+                    <input type="text" placeholder="โรงเรียน/มหาวิทยาลัย (Education)" required/>
                   </div>          
                 </div>
                 <div class="btn-con">
