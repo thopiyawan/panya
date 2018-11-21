@@ -65,6 +65,9 @@
             .btn-con{
                 text-align: center;
             }
+            .grid > input{
+                width: 85%;
+            }
             /*@media screen and (max-width: 700px) {
                 .name-con{
                     grid-template-columns: auto;
