@@ -70,8 +70,8 @@
             }
             #edu{
                 border: 1px solid #39518c;
-                padding: 30px;
-                width: 90%;
+                padding: 10px;
+                width: 100%;
                 outline: none;
                 font-family: 'Kanit', sans-serif;
             }
