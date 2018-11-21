@@ -48,7 +48,7 @@
                 border: 1px solid #39518c;
                 border-radius: 100px;
                 padding: 10px;
-                width: 90%;
+                width: 100%;
                 outline: none;
                 font-family: 'Kanit', sans-serif;
             }
@@ -70,7 +70,7 @@
                 text-align: center;
             }
             .grid > input{
-                width: 85%;
+                width: 100%;
             }
             /*@media screen and (max-width: 700px) {
                 .name-con{
