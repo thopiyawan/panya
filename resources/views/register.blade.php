@@ -79,11 +79,10 @@
         <form>
                 <h1>สมัครเข้าร่วมสถาบันปัญญาประชารัฐ</h1>
                 <div  class="center">
-                <p>ชื่อ (Name)</p>
-                 <div class="grid">
-                    <input type="text" placeholder="ชื่อ (First name)" required/>
-                    <input type="text" placeholder="นามสกุล (Last name)" required/>
-                  </div>   
+                <p>ชื่อ (First name)</p>
+                <input type="text" required/>
+                <p>นามสกุล (Last name)</p>
+                <input type="text"  required/>
                 <p>อายุ (Age)</p>
                 <input type="text" required/>
                 <p>เบอร์โทรศัพท์ (Telephone number)</p>
