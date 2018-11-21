@@ -78,7 +78,7 @@
                 }
             }*/
             .dropdown-el {
-            padding-top: 7px;
+              padding-top: 5px;
               margin-bottom: 10px; 
               min-width: 12em;
               position: relative;
