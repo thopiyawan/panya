@@ -83,7 +83,7 @@
         </style>
     </head>
     <body>
-        <form method="post" action="/games" enctype="multipart/form-data">
+        <form method="post" action="/register_store" enctype="multipart/form-data">
                {{ csrf_field() }}
                 <h1>สมัครเข้าร่วมสถาบันปัญญาประชารัฐ</h1>
                 <div  class="center">
