@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('lastname');
             $table->string('age');
             $table->string('tel_number');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('addr');
             $table->string('addr_sub_dist');
             $table->string('addr_dist');
