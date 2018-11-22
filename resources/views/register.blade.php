@@ -83,31 +83,32 @@
         </style>
     </head>
     <body>
-        <form>
+        <form method="post" action="/games" enctype="multipart/form-data">
+               {{ csrf_field() }}
                 <h1>สมัครเข้าร่วมสถาบันปัญญาประชารัฐ</h1>
                 <div  class="center">
                 <p>ชื่อ (First name)</p>
-                <input type="text" required/>
+                <input type="text" name="firstname" required/>
                 <p>นามสกุล (Last name)</p>
-                <input type="text"  required/>
+                <input type="text" name="lastname" required/>
                 <p>อายุ (Age)</p>
-                <input type="text" required/>
+                <input type="text" name="age" required/>
                 <p>เบอร์โทรศัพท์ (Telephone number)</p>
-                <input type="text" required/>
+                <input type="text" name="tel_number" required/>
                 <p>อีเมล (Email)</p>
-                <input type="text" required/>
+                <input type="text" name="email" required/>
                 <p>ที่อยู่ (Address)</p>
                   <div class="grid">
-                    <input type="text" placeholder="บ้านเลขที่/หมู่/ซอย/ถนน (Number)" required/>
-                    <input type="text" placeholder="ตำบล (Sub-district)" required/>
-                    <input type="text" placeholder="อำเภอ (District)" required/>
-                    <input type="text" placeholder="จังหวัด (Province)" required/>
-                    <input type="text" placeholder="รหัสไปรษณีย์ (Postal Code)" required/>
+                    <input type="text" name="addr" placeholder="บ้านเลขที่/หมู่/ซอย/ถนน (Number)" required/>
+                    <input type="text" name="addr_sub_dist" placeholder="ตำบล (Sub-district)" required/>
+                    <input type="text" name="addr_dist" placeholder="อำเภอ (District)" required/>
+                    <input type="text" name="addr_prov" placeholder="จังหวัด (Province)" required/>
+                    <input type="text" name="addr_postal_code" placeholder="รหัสไปรษณีย์ (Postal Code)" required/>
                   </div>
                 <p>อาชีพ (Career)</p>
-                <input type="text" required/>
+                <input type="text" name="career" required/>
                 <p>ระดับการศึกษา (Education)</p>
-                      <select name="edu" id="edu"  required/>
+                      <select name="edu_level" id="edu" required/>
                         <option value=""  >- กรุณาเลือกระดับการศึกษา -</option>
                         <option value="1" >ต่ำกว่ามัธยมศึกษา</option>
                         <option value="2" >ปวช./มัธยมศึกษา</option>
@@ -117,11 +118,11 @@
                         <option value="6" >ปริญญาเอก</option>
                     </select>
                 <p>คณะ (Faculty)</p>
-                    <input type="text" placeholder="คณะ (Faculty)" required/>
+                    <input type="text" name="edu_faculty" placeholder="คณะ (Faculty)" required/>
                 <p>สาขา (Major)</p>
-                    <input type="text" placeholder="สาขา (Major)" required/>
+                    <input type="text" name="edu_major" placeholder="สาขา (Major)" required/>
                 <p>โรงเรียน/มหาวิทยาลัย (Education)</p>
-                    <input type="text" placeholder="โรงเรียน/มหาวิทยาลัย (Education)" required/>
+                    <input type="text" name="edu_place" placeholder="โรงเรียน/มหาวิทยาลัย (Education)" required/>
                   </div>          
                 </div>
                 <div class="btn-con">
