@@ -72,6 +72,8 @@ class SqlController extends Controller
     public function store(Request $request)
     {
         $user = new User;
+
+         var_dump(request('user_id_line'));
         
         $user->firstname = request('firstname');
         $user->lastname = request('lastname');
