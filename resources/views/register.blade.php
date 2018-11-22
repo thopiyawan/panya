@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
         <title>สถาบันปัญญาประชารัฐ</title>
@@ -168,27 +170,6 @@
                     })
               
             });
-
-
-
-
-   
-    // document.getElementById('sendmessagebutton').addEventListener('click', function () {
-    //     // https://developers.line.me/ja/reference/liff/#liffsendmessages()
-    //     liff.sendMessages([{
-    //         type: 'text',
-    //         text: 'ยืนยันคุณหมอ:'+ doctor_id
-    //     }])//.
-    //     .then(function () {
-    //         //window.alert("ยืนยันคุณหมอประจำตัวคุณแม่");
-    //         liff.closeWindow()
-
-    //     })
-    //     .catch(function (error) {
-    //         window.alert("Error sending message: " + error);
-    //     });
-    // });
-       
             
 };
 
