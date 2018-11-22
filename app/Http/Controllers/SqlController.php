@@ -56,6 +56,7 @@ class SqlController extends Controller
         $user->edu_place = request('edu_place');
         $user->edu_level = request('edu_level');
         $user->save();
+        $user_id_line = $request->input('user_id_line'); 
 
         $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
         $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
