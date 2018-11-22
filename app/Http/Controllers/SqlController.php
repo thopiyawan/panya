@@ -5,8 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 
-define('LINE_MESSAGE_CHANNEL_SECRET','858e9bbe3d1b82a913b39c2a061e740a');
-define('LINE_MESSAGE_ACCESS_TOKEN','xx9TqE3ZcdDHH5dhwV9hQvvAh2uTCJaULFCKwW4ISmfzKv52ZKMgZ40qSaR9ZlYNO8vQspK8wn2dSA2l189D/PxOTxOz9UlgwnDwePri3wJiu52Ilkx9Qgawh5MW90lsQaHxZbp2grVa4Tgzrj7y1AdB04t89/1O/w1cDnyilFU=');
+
 
 class SqlController extends Controller
 {
@@ -38,6 +37,9 @@ class SqlController extends Controller
      */
     public function store(Request $request)
     {
+
+        define('LINE_MESSAGE_CHANNEL_SECRET','858e9bbe3d1b82a913b39c2a061e740a');
+        define('LINE_MESSAGE_ACCESS_TOKEN','xx9TqE3ZcdDHH5dhwV9hQvvAh2uTCJaULFCKwW4ISmfzKv52ZKMgZ40qSaR9ZlYNO8vQspK8wn2dSA2l189D/PxOTxOz9UlgwnDwePri3wJiu52Ilkx9Qgawh5MW90lsQaHxZbp2grVa4Tgzrj7y1AdB04t89/1O/w1cDnyilFU=');
         $user = new User;
         
         $user->firstname = request('firstname');
