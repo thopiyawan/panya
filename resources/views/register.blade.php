@@ -131,6 +131,63 @@
                     <button class="submit">Submit</button>
                 </div>
         </form>
+         <button id="openwindowbutton" style="display:none" style="display:none" >open window</button>
+    <button id="openwindowexternalbutton" style="display:none">open window external</button>
+
+
+
+
+
+    <div id="profileinfo" style="display:none">
+        <h2>Profile</h2>
+        <div id="profilepicturediv">
+        </div>
+        <table border="1">
+            <tr>
+                <th>userId</th>
+                <td id="useridprofilefield"></td>
+            </tr>
+            <tr>
+                <th>displayName</th>
+                <td id="displaynamefield"></td>
+            </tr>
+            <tr>
+                <th>statusMessage</th>
+                <td id="statusmessagefield"></td>
+            </tr>
+        </table>
+    </div> 
+    <div id="liffdata" style="display:none">
+        <h2>LIFF Data</h2>
+        <table border="1">
+            <tr>
+
+                <th>language</th>
+                <td id="languagefield"></td>
+            </tr>
+            <tr>
+                <th>context.viewType</th>
+                <td id="viewtypefield"></td>
+            </tr>
+            <tr>
+                <th>context.userId</th>
+                <td id="useridfield"></td>
+            </tr>
+            <tr>
+                <th>context.utouId</th>
+                <td id="utouidfield"></td>
+            </tr>
+            <tr>
+                <th>context.roomId</th>
+                <td id="roomidfield"></td>
+            </tr>
+            <tr>
+                <th>context.groupId</th>
+                <td id="groupidfield"></td>
+            </tr>
+        </table>
+        
+    </div>
     </body>
         <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
     <script >
