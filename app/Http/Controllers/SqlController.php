@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App/User;
 
 class SqlController extends Controller
 {
@@ -34,7 +35,24 @@ class SqlController extends Controller
      */
     public function store(Request $request)
     {
-        var_dump(request('email'));
+        $user = new User;
+        
+        $user->firstname = request('firstname');
+        $user->lastname = request('lastname');
+        $user->age = request('age');
+        $user->tel_number = request('tel_number');
+        $user->email = request('email');
+        $user->addr = request('addr');
+        $user->addr_sub_dist = request('addr_sub_dist');
+        $user->addr_dist = request('addr_dist');
+        $user->addr_prov = request('addr_prov');
+        $user->addr_postal_code = request('addr_postal_code');
+        $user->career = request('career');
+        $user->edu_faculty = request('edu_faculty');
+         $user->edu_major = request('edu_major');
+        $user->edu_place = request('edu_place');
+        $user->edu_level = request('edu_level');
+        $user->save();
     }
 
     /**
