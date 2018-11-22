@@ -130,4 +130,102 @@
                 </div>
         </form>
     </body>
+        <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+    <script >
+
+               $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+      var user_id_line;
+      window.onload = function (e) {
+       var x = 'test';
+    // init 
+    // https://developers.line.me/ja/reference/liff/#initialize-liff-app
+    liff.init(function (data) {
+        getProfile();
+        initializeApp(data);
+       
+    });
+    
+  $('.submit').on('click', function(){
+                   //alert(user_id_line);
+// document.getElementById('us_id').innerHTML = user_id_line;
+                    var _token = $('input[name="_token"]').val(); 
+                    $.ajax({
+                        url:"{{route('register_store')}}",
+                        method:"POST",
+                         data:{user_id_line:user_id_line,_token:_token},
+                         
+
+
+                    }).then(function () {
+                        //window.alert("ยืนยันคุณหมอประจำตัวคุณแม่");
+                        liff.closeWindow()
+
+                    })
+              
+            });
+
+
+
+
+   
+    // document.getElementById('sendmessagebutton').addEventListener('click', function () {
+    //     // https://developers.line.me/ja/reference/liff/#liffsendmessages()
+    //     liff.sendMessages([{
+    //         type: 'text',
+    //         text: 'ยืนยันคุณหมอ:'+ doctor_id
+    //     }])//.
+    //     .then(function () {
+    //         //window.alert("ยืนยันคุณหมอประจำตัวคุณแม่");
+    //         liff.closeWindow()
+
+    //     })
+    //     .catch(function (error) {
+    //         window.alert("Error sending message: " + error);
+    //     });
+    // });
+       
+            
+};
+
+function getProfile(){
+    // https://developers.line.me/ja/reference/liff/#liffgetprofile()
+    return liff.getProfile().then(function (profile) {
+        document.getElementById('useridprofilefield').textContent = profile.userId;
+        document.getElementById('displaynamefield').textContent = profile.displayName;
+
+        user_id_line =  profile.userId;
+
+
+        var profilePictureDiv = document.getElementById('profilepicturediv');
+        if (profilePictureDiv.firstElementChild) {
+            profilePictureDiv.removeChild(profilePictureDiv.firstElementChild);
+        }
+        var img = document.createElement('img');
+        img.src = profile.pictureUrl;
+        img.alt = "Profile Picture";
+        img.width = 200;
+        profilePictureDiv.appendChild(img);
+
+        document.getElementById('statusmessagefield').textContent = profile.statusMessage;
+    }).catch(function (error) {
+        window.alert("Error getting profile: " + error);
+    });
+}
+
+function initializeApp(data) {
+
+ 
+    document.getElementById('languagefield').textContent = data.language;
+    document.getElementById('viewtypefield').textContent = data.context.viewType;
+    document.getElementById('useridfield').textContent = data.context.userId;
+    document.getElementById('utouidfield').textContent = data.context.utouId;
+    document.getElementById('roomidfield').textContent = data.context.roomId;
+    document.getElementById('groupidfield').textContent = data.context.groupId;
+}
+</script>
 </html>

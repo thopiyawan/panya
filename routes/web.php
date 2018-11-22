@@ -23,4 +23,4 @@ Route::get('/', function () {
 Route::get('/register', function () {
     return view('register');
 });
-Route::post('/register_store', 'SqlController@store');
+Route::post('/register_store', 'SqlController@store')->name('register_store');
