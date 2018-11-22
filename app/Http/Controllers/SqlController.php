@@ -53,6 +53,14 @@ class SqlController extends Controller
         $user->edu_place = request('edu_place');
         $user->edu_level = request('edu_level');
         $user->save();
+
+
+        $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
+        $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
+        $Message1 =  'ลงทะเบียนเรียบร้อย';
+        $textMessageBuilder = new TextMessageBuilder($Message1);
+        $response = $bot->pushMessage( $user_id_line ,$textMessageBuilder);
+        $response->getHTTPStatus() . ' ' . $response->getRawBody();
     }
 
     /**
