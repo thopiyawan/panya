@@ -92,7 +92,7 @@
                 <p>นามสกุล (Last name)</p>
                 <input type="text" name="lastname" required/>
                 <p>อายุ (Age)</p>
-                <input type="text" name="age" required/>
+                <input type="number" name="age" required/>
                 <p>เบอร์โทรศัพท์ (Telephone number)</p>
                 <input type="text" name="tel_number" required/>
                 <p>อีเมล (Email)</p>
