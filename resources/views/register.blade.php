@@ -85,7 +85,7 @@
         </style>
     </head>
     <body>
-        <form method="post" action="/register_store" enctype="multipart/form-data">
+        <form>
                {{ csrf_field() }}
                 <h1>สมัครเข้าร่วมสถาบันปัญญาประชารัฐ</h1>
                 <div  class="center">
@@ -216,7 +216,12 @@
                     $.ajax({
                         url:"{{route('register_store')}}",
                         method:"POST",
-                         data:{user_id_line:user_id_line,_token:_token},
+                         data:{user_id_line:user_id_line,_token:_token,
+                               firstname:$('input#firstname').val()
+
+
+
+                               },
                          
 
 
