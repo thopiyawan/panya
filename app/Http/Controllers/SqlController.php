@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App/User;
+use App\User;
 
 class SqlController extends Controller
 {
@@ -49,7 +49,7 @@ class SqlController extends Controller
         $user->addr_postal_code = request('addr_postal_code');
         $user->career = request('career');
         $user->edu_faculty = request('edu_faculty');
-         $user->edu_major = request('edu_major');
+        $user->edu_major = request('edu_major');
         $user->edu_place = request('edu_place');
         $user->edu_level = request('edu_level');
         $user->save();
