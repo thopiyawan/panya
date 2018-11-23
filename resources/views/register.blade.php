@@ -130,11 +130,4 @@
                 </div>
         </form>
     </body>
-    <script>
-$(document).ready(function(){
-    $("form").submit(function(){
-        alert("ลงทะเบียนเรียมร้อย");
-    });
-});
-</script>
 </html>

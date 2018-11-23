@@ -100,6 +100,8 @@ class SqlController extends Controller
         $response = $bot->pushMessage( $user_id_line ,$textMessageBuilder);
         $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
+        return view('welcome');
+
     }
 
     /**
