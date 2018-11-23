@@ -73,7 +73,7 @@ class SqlController extends Controller
     {
         $user = new User;
 
-         var_dump(request('user_id_line'));
+         // var_dump(request('user_id_line'));
         
         $user->firstname = request('firstname');
         $user->lastname = request('lastname');
